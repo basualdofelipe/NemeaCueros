@@ -33,13 +33,87 @@
 }
 
 
-.nav{
+/* .nav{
     position: stiky;
     top: 0;
     z-index: 2;
-    text-align: center;
+    width: 50%;
+} */
+
+.nav{
+    position: sticky;
+    width: 50vw;
+    background-color: black;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1;
+    margin: 10px;
 }
 
+
+
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+}
+
+.nav ul li{
+    position: relative;
+    list-style: none;
+    width: 90px;
+    height: 70px;
+    z-index: 1;
+}
+
+.nav ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.nav ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: gold;
+}
+
+.nav ul li:hover a .icon{
+
+    transform: translateY(-10px);
+}
+
+.nav ul li a .text{
+    position: absolute;
+    color: gold;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.nav ul li:hover a .text{
+    opacity: 1;
+    transform: translateY(10px)
+}
+
+
+
+/* 
 .nav__links {
     list-style: none;
     display: inline-block;
@@ -59,7 +133,7 @@
 
 .nav__link:hover{
     color: #fff;
-}
+} */
 
 main{
     flex-grow: 1;
