@@ -32,23 +32,13 @@
     font-size: 3em;
 }
 
-
-/* .nav{
-    position: stiky;
-    top: 0;
-    z-index: 2;
-    width: 50%;
-} */
-
 .nav{
     position: sticky;
     width: 50vw;
-    background-color: black;
     align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
     z-index: 1;
     margin: 10px;
 }
@@ -58,13 +48,13 @@
 .nav ul{
     display: flex;
     justify-content: space-around;
-    width: auto;
+    width: 100%;
 }
 
 .nav ul li{
-    position: relative;
+    /* position: relative; */
     list-style: none;
-    width: 90px;
+    width: 50px;
     height: 70px;
     z-index: 1;
 }
@@ -111,29 +101,6 @@
     transform: translateY(10px)
 }
 
-
-
-/* 
-.nav__links {
-    list-style: none;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.nav__item {
-    display: inline-block;
-}
-
-.nav__link {
-    color: rgb(255, 228, 73);
-    text-decoration: none;
-    margin-left: 20px;
-
-}
-
-.nav__link:hover{
-    color: #fff;
-} */
 
 main{
     flex-grow: 1;
@@ -196,17 +163,11 @@ main{
     transform: translateX(-10px);
 }
 
-
-/* .footer__redes:hover .footer__redes__iconos__imagen{
-    transition: 1s;
-    transform: translate(-150px);
-} */
-
 .footer__img{
     height: 1.5em;
 }
 
-
+/* 
 .productos{
     display: flex;
     flex-wrap: wrap;
@@ -240,7 +201,60 @@ main{
 .productos__image {
     width: 100%;
     height: auto;
+} */
+
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.productos li{
+    position: relative;
+    justify-self: center;
+    display: block;
+    flex-direction: column;
+    width: 40vw;
+    margin: 5%;
+}
+
+
+.productos img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    position: relative;
+    transition: 1s;
+    transform: scale(100%);
+    opacity: 1;
+} 
+
+.productos__titulo{
+    list-style: none;
+    z-index: 1;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.productos__titulo p{
+    font-size: 7em;
+    font-family: 'Tangerine';
+    transition: 1s;
+    opacity: 0;
+}
+
+.productos li:hover .productos__titulo p{
+    opacity: 1;
+}
+
+.productos li:hover img{
+    opacity: 0.5;
+    transform: scale(105%);
+}
+
 
 .galeria {
     display: grid;
@@ -366,6 +380,7 @@ main{
 @media (max-width: 480px) {
     .pagina {
         background-color: red;
+        font-size: 10px
     }
 
 }
