@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
 
 .pagina{
     background-color: #000;
@@ -15,89 +14,11 @@
     min-height: 100vh;
 }
 
-
-
-.header{
-    height: 50px; 
-    display: block;
-    text-align: center;
-    margin: 15px 0 0 0;
-    h1{
-        font-family: 'Tangerine', sans-serif;
-        font-size: 3rem;
-        color: gold;
-    }
-}
-
 h1{
     font-family: 'Tangerine', sans-serif;
     font-size: 3rem;
     color: gold;
 }
-
-.nav{
-    position: sticky;
-    width: 50vw;
-    align-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    margin: 10px;
-    ul{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        li{
-            list-style: none;
-            width: 50px;
-            height: 70px;
-            z-index: 1;
-            a{
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                width: 100%;
-                text-align: center;
-                font-weight: 500;
-                .icon{
-                    position: relative;
-                    display: block;
-                    line-height: 75px;
-                    font-size: 1.5em;
-                    text-align: center;
-                    transition: 0.5s;
-                    color: gold;
-                }
-                .text{
-                    position: absolute;
-                    color: gold;
-                    font-weight: 400;
-                    font-size: 0.75em;
-                    letter-spacing: 0.05em;
-                    transition: 0.5s;
-                    opacity: 0;
-                    transform: translateY(-10px);
-                }
-            }
-            &:hover{
-                a{
-                    .icon{
-                    transform: translateY(-10px);
-                    }
-                    .text{
-                        opacity: 1;
-                        transform: translateY(10px)
-                    }
-                
-                }
-            }
-        }
-    }
-}
-
 
 main{
     flex-grow: 1;
@@ -110,49 +31,6 @@ main{
         max-width: 100vw;
     }
 }
-
-
-
-.footer__container{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas: "vacio datos redes";
-    .footer__datos{
-        color: gold;
-        grid-area: datos;
-        align-self: center;
-        justify-self: center;
-    }
-    .footer__redes{
-        margin: 5px;
-        grid-area: redes;
-        list-style: none;
-        text-align: right;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        .footer__redes__iconos{
-            display: flex;
-            flex-direction: row-reverse;
-            .footer__redes__iconos__texto{
-                color: gold;
-                opacity: 0;
-                transform: translateX(-100px);
-                transition: 1s;
-            }
-            .footer__img{
-                height: 1.5em;
-            }
-        }
-        &:hover .footer__redes__iconos__texto{
-            transition: 1s;
-            opacity: 1;
-            transform: translateX(-10px);
-        }
-    }
-}
-
-
 
 .productos{
     display: grid;

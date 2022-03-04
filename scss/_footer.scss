@@ -1,0 +1,38 @@
+.footer__container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "vacio datos redes";
+    .footer__datos{
+        color: gold;
+        grid-area: datos;
+        align-self: center;
+        justify-self: center;
+    }
+    .footer__redes{
+        margin: 5px;
+        grid-area: redes;
+        list-style: none;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .footer__redes__iconos{
+            display: flex;
+            flex-direction: row-reverse;
+            .footer__redes__iconos__texto{
+                color: gold;
+                opacity: 0;
+                transform: translateX(-100px);
+                transition: 1s;
+            }
+            .footer__img{
+                height: 1.5em;
+            }
+        }
+        &:hover .footer__redes__iconos__texto{
+            transition: 1s;
+            opacity: 1;
+            transform: translateX(-10px);
+        }
+    }
+}
