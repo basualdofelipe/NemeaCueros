@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
-@import "header";
-@import "nav";
-@import "footer";
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+@import "header";
+@import "nav";
+@import "footer";
+
+
 
 .pagina{
     background-color: #000;
@@ -87,12 +89,12 @@ main{
 .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    .galeria__foto{
-        width: 100%;
-        object-fit: scale-down;
-    }
+    
 }
-
+.galeria__foto{
+    width: 100%;
+    object-fit: scale-down;
+}
 
 
 
