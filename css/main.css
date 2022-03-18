@@ -64,25 +64,6 @@
         opacity: 1;
         transform: translateY(10px); }
 
-.nav ul li:hover a .icon-home {
-  color: #ffd900; }
-
-.nav ul li:hover a .icon-productos {
-  color: #15ff00; }
-
-.nav ul li:hover a .icon-galeria {
-  color: #ff00d0; }
-
-.nav ul li:hover a .icon-nosotros {
-  color: #ff5151; }
-
-.nav ul li:hover a .icon-contacto {
-  color: white; }
-
-.nav ul li:hover a .icon-home {
-  background-color: white;
-  transform: scale(150%); }
-
 .footer__container {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
