@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 203, 206);
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div{
+    padding: 5% 0 5% 5%;
+}
+
+div:hover{
+    background-color: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+.header{
+    padding: 2% 0 2% 2%;
+}
+
+.header:hover{
+    background-color: rgb(0, 203, 206);
+}
+
+.sub{
+    padding-left: 10%;
+}
+
+.obj{
+    background-color: aquamarine;
+}
+
+.tools{
+    background-color: aqua;
+}
+
+.cronog{
+    background-color: aquamarine;
+}
+
+.cronog2{
+    background-color: aqua;
+}
+
+.dom{
+    background-color: aquamarine;
+}
+
+.mant{
+    background-color: aqua;
+}
+
+.presup{
+    background-color: aquamarine;
+}
